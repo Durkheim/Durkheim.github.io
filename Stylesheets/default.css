@@ -7,8 +7,9 @@ img {
   width: 500px;
 }
 
-div.navbar ul {
+div.navbar {
   margin: auto;
+  margin-top: 600px;
 }
 
 div.navfooter {
