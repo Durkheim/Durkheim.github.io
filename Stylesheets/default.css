@@ -2,3 +2,10 @@ img {
   margin: auto;
   position: relative;
 }
+
+ul {
+  display: inline-block;
+}
+ul li {
+  list-style: none;
+}
