@@ -1,10 +1,13 @@
 img {
   margin: auto;
   position: relative;
+  width: 500px;
+  height: 300px;
 }
 
 ul {
-  display: inline-block;
+  display: inline;
+  position: relative;
 }
 ul li {
   list-style: none;
