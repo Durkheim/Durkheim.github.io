@@ -1,3 +1,9 @@
+img{
+    display:inline-block;
+    height:50px;
+    margin: 0 auto;
+}
+
 .navhead ul li {
   position: relative;
   text-decoration: none;
