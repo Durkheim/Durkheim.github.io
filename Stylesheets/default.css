@@ -6,4 +6,24 @@ img {
   width: 100px;
 }
 
+ul {
+  display: inline-block; /*Allows stacked elements to sit side by side */
+  position: relative;
+  bottom: 350px;
+  margin-right: 200px;
+  margin-left: 100px;
+
+}
+
+ul li {
+  list-style: none; /* Gets rid bullet-points*/
+}
+
+li {
+  border: 1px solid #000000;
+  height: 55px;
+  width: 155px;
+  font-size: 25px;
+}
+
 
