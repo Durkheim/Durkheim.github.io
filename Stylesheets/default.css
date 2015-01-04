@@ -2,6 +2,11 @@ html {
   background-color: #a3c9f0;
 }
 
+img {
+  height: 100px;
+  width: 300px;
+}
+
 div.navbar {
   margin: auto;
 }
