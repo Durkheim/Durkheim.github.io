@@ -1,15 +1,9 @@
-img{
-    display:inline-block;
-    height:50px;
-    margin: 0 auto;
-}
-
-.navhead ul li {
+img {
+  margin: auto;
   position: relative;
-  text-decoration: none;
-  margin-top: 500px;
+  left: 50%;
+  height: 300px;
+  width: 100px;
 }
 
-ul li {
-  list-style: none;
-}
+
