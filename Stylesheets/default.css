@@ -4,7 +4,11 @@ html {
 
 div.navbar {
   margin: auto;
+}
 
+div.navfooter {
+  margin-bottom: 0px;
+  margin: auto;
 }
 
 ul {
