@@ -6,11 +6,11 @@ img {
   height: 300px;
   width: 500px;
   position: relative;
-  margin: auto;
+  border: 20px solid black;
 }
 
 div.navbar {
-  margin-left: 100px;
+  margin-left: 500px;
 }
 
 div.navfooter {
