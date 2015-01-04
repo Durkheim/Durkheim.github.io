@@ -3,3 +3,7 @@
   text-decoration: none;
   margin-top: 500px;
 }
+
+ul li {
+  list-style: none;
+}
