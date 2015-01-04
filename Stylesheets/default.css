@@ -1,13 +1,5 @@
-#header {
- display:block;
- margin:0 auto;
- position:relative;
-}
-
-.navbar {
-   margin:0 auto;
-   float:none;
-   position:relative;
-   top:-35px;
-   width:500px;
+.navhead ul li {
+  position: relative;
+  text-decoration: none;
+  margin-top: 500px;
 }
