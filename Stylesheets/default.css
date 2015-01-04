@@ -3,11 +3,11 @@ html {
 }
 
 img {
-  height: 100px;
-  width: 300px;
+  height: 300px;
+  width: 500px;
 }
 
-div.navbar {
+div.navbar ul {
   margin: auto;
 }
 
@@ -17,7 +17,12 @@ div.navfooter {
 }
 
 ul {
-  list-style: none;
-  list-style-position: auto;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
 }
 
