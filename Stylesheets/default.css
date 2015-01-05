@@ -10,6 +10,7 @@ img {
 }
 
 div.navbar {
+  margin-top: 10px;
   margin-left: 100px;
   font-size: 50px;
   font-family: sans-serif
