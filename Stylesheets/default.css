@@ -14,7 +14,8 @@ div.navbar {
   font-size: 50px;
   font-family: sans-serif;
   background-color: #336699;
-  color: #223F5C;
+  color: #1F3D5C;
+  padding: 1px 1px 1px 1px;
 }
 
 div.navfooter {
@@ -22,7 +23,8 @@ div.navfooter {
   font-size: 25px;
   font-family: sans-serif;
   background-color: #336699;
-  color: #223F5C;
+  color: #1F3D5C;
+  padding: 1px 1px 1px 1px;
 }
 
 ul {
@@ -48,10 +50,5 @@ a:visited {
   color: #b54077;
 }
 
-a.hoover {
-  text-decoration: underline;
-
-a.active {
-  color: #0000FF;
 }
 
