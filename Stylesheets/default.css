@@ -12,12 +12,16 @@ img {
 div.navbar {
   margin-left: 500px;
   margin-right: 250px;
+  font-size: 50px;
+  font-family: sans-serif
 }
 
 div.navfooter {
   margin-bottom: 0px;
   margin-left: 500px;
   margin-right: 250px;
+  font-size: 25px;
+  font-family: sans-serif;
 }
 
 ul {
@@ -44,5 +48,9 @@ a:link {
 
 a:visited {
   color: #b54077;
+}
+
+a.hoover {
+  text-decoration:
 }
 
