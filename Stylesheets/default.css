@@ -18,10 +18,10 @@ div.navbar {
 }
 
 div.navfooter {
-  margin-bottom: 0px;
-  margin-left: 450px;
+  text-align: center;
   font-size: 25px;
   font-family: sans-serif;
+  background-color: #336699;
   color: #223F5C;
 }
 
@@ -43,15 +43,15 @@ a {
  text-decoration: none;
 }
 
-a:link {
-  color: #2b4f73;
-}
 
 a:visited {
   color: #b54077;
 }
 
 a.hoover {
-  text-decoration:
+  text-decoration: underline;
+
+a.active {
+  color: #0000FF;
 }
 
