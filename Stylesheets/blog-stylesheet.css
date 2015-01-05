@@ -1,6 +1,7 @@
 img {
-  margin: auto; /* puts equal space on left and right */
-  position: relative; /* Allows stacking but offsetting */
+  margin-right: 500px;
+  margin-left: 500px;
+  position: relative;
   left: 50%;
   height: 300px;
   width: 1000px;
@@ -14,7 +15,7 @@ img {
 }
 
 ul {
-  display: inline-block; /*Allows stacked elements to sit side by side */
+  display: inline-block;
   position: relative;
   bottom: 350px;
   margin-right: 200px;
@@ -23,7 +24,7 @@ ul {
 }
 
 ul li {
-  list-style: none; /* Gets rid bullet-points*/
+  list-style: none;
 }
 
 li {
@@ -34,9 +35,9 @@ li {
 }
 
 .align {
-  display: inline-block; /* sets the body of the blog side by side with nav bar*/
+  display: inline-block;
 }
 
 section {
-  width: 500px; /* sets width of the blog content*/
+  width: 500px;
 }
