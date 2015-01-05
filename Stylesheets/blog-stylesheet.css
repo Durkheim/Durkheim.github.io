@@ -3,7 +3,7 @@ img {
   position: relative; /* Allows stacking but offsetting */
   left: 50%;
   height: 300px;
-  width: 100px;
+  width: 500px;
 }
 
 #blog-title {
