@@ -38,8 +38,10 @@ li {
 }
 
 main {
-  margin: auto;
-  background-color: #BFDFFF;
+  margin-left: 500;
+  margin-right: 500;
+  background-color: #E8F8FF;
+  font-style: serif;
 }
 
 section p {
