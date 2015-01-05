@@ -38,9 +38,10 @@ li {
 }
 
 main {
-  margin-left: 500;
-  margin-right: 500;
-  background-color: #E8F8FF;
+  margin-left: 500px;
+  margin-right: 500px;
+  margin-bottom: 50px;
+  background-color: #BFDFFF;
   font-style: serif;
 }
 
