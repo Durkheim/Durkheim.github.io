@@ -39,6 +39,11 @@ li {
 
 main {
   margin: auto;
+  background-color: #BFDFFF;
+}
+
+section p {
+  margin: auto;
 }
 
 a {
