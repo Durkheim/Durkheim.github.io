@@ -38,15 +38,11 @@ li {
 }
 
 main {
-  margin-left: 500px;
-  margin-right: 500px;
+  margin-left: 250px;
+  margin-right: 250px;
   margin-bottom: 50px;
   background-color: #BFDFFF;
   font-style: serif;
-}
-
-section p {
-  margin: auto;
 }
 
 a {
