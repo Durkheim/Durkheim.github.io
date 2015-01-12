@@ -11,6 +11,8 @@ img {
   position: relative;
   left: 50%;
   font-size: 50px;
+  padding-left: 1px;
+  padding-right: 1px;
 }
 
 ul {
@@ -39,4 +41,6 @@ li {
 
 section {
   width: 500px;
+  padding-left: 1px;
+  padding-right: 1px;
 }
