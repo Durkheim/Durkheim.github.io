@@ -35,15 +35,17 @@
 
       Let's say we have the following array:
 
-      <img src ="../imgone.jpg" >
+      array = ["wind","water","fire","earth"]
 
       If we wanted to look up the third object in the array is, we can call it:
 
-      <img src ="../imgtwo.jpg" >
+      array[2]
+        => fire
 
     If there is no object at a particular index, then the array will just return nil. Let's see what happens when we try to look up the 4th index of the array above:
 
-      <img src ="../imgthree.jpg" >
+      array[4]
+       => nil
 
   </p>
 
@@ -54,11 +56,13 @@
 
     Let's take a look at the hash below.
 
-    <img src ="../imgfour.jpg" >
+    hash = {"lime"=>"green", "lemon"=>"yellow", "grapefruit"=>"pink"}
 
     The keys are lime, lemon, and grapefruit, which are paired with the values green, yellow, and pink respectively. If we wanted to print the value of lime, we would just write:
 
-    <img src ="../imgfive.jpg" >
+    puts hash["lime"]
+
+    green
 
     <p>
       Given the differences between arrays and hashes, there are select occasions where you may want to use one over the other. For example, if you're working with a data set and you don't care what the indexed object is, just that you call whatever object is at that position, an array would work best, especially if there is considerable manipulation to the array (add, removal, etc.). However, if you want to call a specific object in a large data set, regardless of order, then a hash is the way to go.
