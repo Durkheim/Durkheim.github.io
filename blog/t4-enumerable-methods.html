@@ -25,11 +25,7 @@
   <section>
 
    <p>
-   This week's cirriculum emphasized the use of <b>Enumerators</b> in Ruby. Enumerators are a set of methods contained within the <b>Enumerable module</b>, which enables us to use the aforementioned methods on unrelated classes. In order to use the Enumerators, however, a class must have a defined <i>each</i> method. For those that do, the Enumerators allow us to sort, search, append, and manipulate a collection within a particular class, such as Array. For a couple problems this week, I relied on the Enumerator <i>map</i>.
-   </p>
-
-   <p>
-   <i>map</i> is an enumerator that invokes a given block of cde for each element (x) and returns a new array (new_ary) as a result:
+   This week's cirriculum emphasized the use of <b>Enumerators</b> in Ruby. Enumerators are a set of methods contained within the <b>Enumerable module</b>, which enables us to use the aforementioned methods on unrelated classes. In order to use the Enumerators, however, a class must have a defined <i>each</i> method. For those that do, the Enumerators allow us to sort, search, append, and manipulate a collection within a particular class, such as Array. For a couple problems this week, I relied heavily on the Enumerator <i>map</i>, which invokes a given block of code for each element (x) and returns a new array (new_ary):
    </p>
 
    <p>
@@ -54,14 +50,14 @@
    </p>
 
    <p>
-     For the each element in the array, map is running the code block <i>x.is_a?(Integer)? x + n : x</i> and returning a new array. For array_add_integer(array,3), we get:
+     For the each element in the array, map is running the code block <i>x.is_a?(Integer)? x + n : x</i> and returning a new array. For <i>array_add_integer(array,3)</i>, we get:
     </p>
 
     <p>
      <i>[6, "pizza", "bagels", "are", "good", "but", 7, "would", "be", "awesome"]</i>
     </p>
 
-    <p> It's important to note that the original array has not been modified. The output is a completely new array. Calling the original array will give the original elements as an output. This makes <i>map</i> non-destructive, since the original array was not modified when we ran the method array_add_integer.</p>
+    <p> It's important to note that the original array has not been modified. The output is a completely new array. Calling the original array will give the original elements as an output. This makes <i>map</i> non-destructive, since the original array was not modified when we ran the method <i>array_add_integer</i>.</p>
 
    <p>
     As mentioned earlier, the Enumerable module allows us to use Enumerators on unrelated classes. So far, we've shown how <i>map</i> can be used for Array; however, it can also be used on the class Range:
@@ -75,7 +71,7 @@
    </p>
 
    <p>
-    I tend to think of <i>map</i> like this: it's a useful enumerator for executing the same action across particular elements in a collection of data, without comprimising the integrity of the original data set.
+    I tend to think of <i>map</i> like this: it's a useful enumerator for executing the same action across particular elements in a collection of data, without comprimising the integrity of the original data set. Perhaps that's an an over-simplification, but it <i>is</i> super useful.
   </p>
 
   </section>
