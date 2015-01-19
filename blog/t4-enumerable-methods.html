@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../Stylesheets/default.css">
+<link rel="stylesheet" type="text/css" href="../Stylesheets/blog-stylesheet.css"/>
+  <title>Durkheim</title>
+  <meta charset="UTF-8">
+</head>
+<img src="../BringCats.jpg" alt="imagelogo" width="500" height="300">
+<h1 id="blog-title">Durkheim's Blog</h1>
+<ul>
+   <li><a href="http://durkheim.github.io/blog.html">Home</a></li>
+  <li><a href="#">About Me</li>
+  <li><a href="blog-archive.html">Archive</li>
+  <li><a href="http://durkheim.github.io/">Website</a></li>
+  <li><a href="https://twitter.com/SuboptimalDelta">Twitter</a></li>
+</ul>
+<div class="align">
+<main>
+
+  <h1>DBC Phase 0, Week 4</h1>
+  <h2>Enumerable#map</h2>
+  <h4>January 19, 2015</h4>
+
+  <section>
+
+   <p>
+   This week's cirriculum emphasized the use of <b>Enumerators</b> in Ruby. Enumerators are a set of methods contained within the <b>Enumerable module</b>, which enables us to use the aforementioned methods on unrelated classes. In order to use the Enumerators, however, a class must have a defined <i>each</i> method. For those that do, the Enumerators allow us to sort, search, append, and manipulate a collection within a particular class, such as Array. For a couple problems this week, I relied on the Enumerator <i>map</i>.
+   </p>
+
+   <p>
+   <i>map</i> is an enumerator that invokes a given block of cde for each element (x) and returns a new array (new_ary) as a result:
+   </p>
+
+   <p>
+   <i>map {|x| block} -> new_ary</i>
+   </p>
+
+   <p>
+    As an example, let's define the following array:
+   </p>
+
+   <p><i>array = [3,"pizza", "bagels", "are", "good", "but",4, "would", "be", "awesome"]</i>
+   </p>
+
+   <p>
+    Now, for the array above, let's say we want to return a new array that adds some number <i>n</i> to the integer elements in the original array. We can use <i>map</i> to do this:
+   </p>
+
+   <p>
+    <i>def array_add_integer(array,n)
+         array.map {|x| x.is_a?(Integer)? x + n : x}
+    end</i>
+   </p>
+
+   <p>
+     For the each element in the array, map is running the code block <i>x.is_a?(Integer)? x + n : x</i> and returning a new array. For array_add_integer(array,3), we get:
+    </p>
+
+    <p>
+     <i>[6, "pizza", "bagels", "are", "good", "but", 7, "would", "be", "awesome"]</i>
+    </p>
+
+    <p> It's important to note that the original array has not been modified. The output is a completely new array. Calling the original array will give the original elements as an output. This makes <i>map</i> non-destructive, since the original array was not modified when we ran the method array_add_integer.</p>
+
+   <p>
+    As mentioned earlier, the Enumerable module allows us to use Enumerators on unrelated classes. So far, we've shown how <i>map</i> can be used for Array; however, it can also be used on the class Range:
+   </p>
+
+   <p>
+   <i>
+    (1..10).map {|x| x*x }
+       => [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+   </i>
+   </p>
+
+   <p>
+    I tend to think of <i>map</i> like this: it's a useful enumerator for executing the same action across particular elements in a collection of data, without comprimising the integrity of the original data set.
+  </p>
+
+  </section>
+</main>
+</div>
+</html>
