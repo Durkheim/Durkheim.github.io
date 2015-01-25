@@ -15,7 +15,7 @@ img {
   padding-right: 1px;
 }
 
-ul {
+.sidenavbar ul {
   display: inline-block;
   position: relative;
   bottom: 350px;
