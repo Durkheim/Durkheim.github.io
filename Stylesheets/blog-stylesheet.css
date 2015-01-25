@@ -1,5 +1,5 @@
 img {
-  margin: auto;
+  margin: ;
   position: relative;
   left: 50%;
   height: 300px;
@@ -9,6 +9,7 @@ img {
 #blog-title {
   margin: auto;
   position: relative;
+  text-align: center;
   left: 50%;
   font-size: 50px;
   padding-left: 1px;
