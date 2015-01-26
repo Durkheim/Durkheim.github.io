@@ -38,11 +38,11 @@
 
   <p>
    <code>
-      class Songs_on_the_Radio
-        def initialize (song_title, year)
-          @song = song_title
-          @year = year
-        end
+      class Songs_on_the_Radio<br>
+        def initialize (song_title, year)<br>
+          @song = song_title<br>
+          @year = year<br>
+        end<br>
       end
    </code>
   </p>
@@ -57,15 +57,15 @@
 
    <p>
    <code>
-    class Songs_on_the_Radio
-      def initialize (song_title, year)
-        @song = song_title
-        @year = year
-      end
+    class Songs_on_the_Radio<br>
+      def initialize (song_title, year)<br>
+        @song = song_title<br>
+        @year = year<br>
+      end<br><br>
 
-      def play
-        (@year == 2015) ? (return "The song #{@song} is hot right now. Turn it up!") : (return "The song #{@song} is old, dude. Change the station.")
-      end
+      def play<br>
+        (@year == 2015) ? (return "The song #{@song} is hot right now. Turn it up!") : (return "The song #{@song} is old, dude. Change the station.")<br>
+      end<br>
     end
   </code>
   </p>
@@ -75,15 +75,15 @@
   </p>
 
   <code>
-    song = Songs_on_the_Radio.new("Informer", 1993)
-    p song.play
+    song = Songs_on_the_Radio.new("Informer", 1993)<br>
+    p song.play<br><br>
 
-   "The song Informer is old, dude. Change the station."
+   "The song Informer is old, dude. Change the station."<br>
 
-    song_two = Songs_on_the_Radio.new("Teach Me", 2015)
-    p song_two.play
+    song_two = Songs_on_the_Radio.new("Teach Me", 2015)<br>
+    p song_two.play<br><br>
 
-    "The song Teach Me is hot right now. Turn it up!"
+    "The song Teach Me is hot right now. Turn it up!"<br>
   </code>
 
   <p>
