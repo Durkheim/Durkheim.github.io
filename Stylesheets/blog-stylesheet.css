@@ -1,7 +1,6 @@
 img {
-  margin-right: 2000px;
+  margin: auto;
   position: relative;
-  left: 50%;
   height: 300px;
   width: 500px;
 }
