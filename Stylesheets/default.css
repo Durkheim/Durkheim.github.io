@@ -37,8 +37,8 @@ li {
     display: inline;
 }
 
-li a {
-  a:link: #1F3D5C;
+li a:link {
+  color: #1F3D5C;
 }
 
 main {
