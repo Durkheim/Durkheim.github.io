@@ -37,6 +37,10 @@ li {
     display: inline;
 }
 
+li a {
+  a:link: #1F3D5C;
+}
+
 main {
   margin-top:10px;
   margin-left: 250px;
