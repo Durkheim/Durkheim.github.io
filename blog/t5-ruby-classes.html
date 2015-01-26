@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../Stylesheets/default.css">
+<link rel="stylesheet" type="text/css" href="../Stylesheets/blog-stylesheet.css"/>
+  <title>Durkheim</title>
+  <meta charset="UTF-8">
+</head>
+<img src="../BringCats.jpg" alt="imagelogo" width="500" height="300">
+<h1 id="blog-title">Durkheim's Blog</h1>
+<ul>
+   <li><a href="http://durkheim.github.io/blog.html">Home</a></li>
+  <li><a href="#">About Me</li>
+  <li><a href="blog-archive.html">Archive</li>
+  <li><a href="http://durkheim.github.io/">Website</a></li>
+  <li><a href="https://twitter.com/SuboptimalDelta">Twitter</a></li>
+</ul>
+<div class="align">
+<main>
+
+  <h1>DBC Phase 0, Week 5</h1>
+  <h2>Riding Around with Class</h2>
+  <h4>January 25, 2015</h4>
+
+  <section>
+
+   <p>
+    Last week's cirriculum from Dev Bootcamp featured a brief introduction to the concept of <i>class</i>, laying the foundation for understanding Ruby as an object-oriented language. This week we dug deeper into writing our own classes by defining states of objects in a class and methods that those objects can use. In this post, I'll define what a class is and give a walkthrough on writing one.
+   </p>
+
+  <p>
+     In Ruby, everything is an object with particular states and a set of methods that can be performed. Objects that belong to the same class have similar states and can use the same methods. For example, there's the class Array. Any object that belongs to Array is an ordered, integer-indexed collection, and, thus, can use methods that are defined within the class, such as #rotate, #shuffle, and many others. If you visit the <a href="http://www.ruby-doc.org/core-2.2.0/Array.html">Ruby-Doc</a> online, you'll see a list of methods that are defined within the class Array.
+  </p>
+
+  <p>
+    So far, I've mentioned that objects have states, but it's time to define what a state is. A state is essentially a defining attribute of an object, such as an id, quantity, etc. These states are things that an object can return when called by a particular method (like calling the first index position from an array object). Within a class, the state of objects is by the <i>instance variables</i>. Let's start writing a class to see how instance variables get defined. I want to write a class called Songs_on_the_Radio. For objects that belong to this class, I want to know their title and the year they were released.
+  </p>
+
+  <p>
+   <code>
+      class Songs_on_the_Radio
+        def initialize (song_title, year)
+          @song = song_title
+          @year = year
+        end
+      end
+   </code>
+  </p>
+
+   <p>
+    In our class, we used the initialize method to set up an object's state, which requires the parameters song_title and year. We then set the instance variables @song and @year equal to song_title and year respectively.
+   </p>
+
+   <p>
+     Now, let's say someone is listening to the radio with us, and they're only in the mood to listen to music that was released in 2015. When a song from 2015 comes on, they express that they like the song and ask you to turn it up, while any time an older song comes on, they'll request that you change the station. We can set up a method to give either response and also include the song title in the response:
+   </p>
+
+   <p>
+   <code>
+    class Songs_on_the_Radio
+      def initialize (song_title, year)
+        @song = song_title
+        @year = year
+      end
+
+      def play
+        (@year == 2015) ? (return "The song #{@song} is hot right now. Turn it up!") : (return "The song #{@song} is old, dude. Change the station.")
+      end
+    end
+  </code>
+  </p>
+
+  <p>
+    We've now defined a method #play under the class Songs_on_the_Radio, which can be used by any objects belonging to the class. Let's create some objects in the class and see the response we get.
+  </p>
+
+  <code>
+    song = Songs_on_the_Radio.new("Informer", 1993)
+    p song.play
+
+   "The song Informer is old, dude. Change the station."
+
+    song_two = Songs_on_the_Radio.new("Teach Me", 2015)
+    p song_two.play
+
+    "The song Teach Me is hot right now. Turn it up!"
+  </code>
+
+  <p>
+   If you wanted, you could set up more parameters for initialize method and more instance variables to give more information on objects that belong to the class, such as artist, album, etc. This is a relatively simple example of what you can due with class, but it illustrates how writing a class enables you to create objects and explicitly detail what they can (or cannot) do, giving you control over specific data.
+  </p>
+
+  </section>
+</main>
+</div>
+</html>
