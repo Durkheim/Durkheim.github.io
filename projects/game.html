@@ -1,14 +1,67 @@
-<!DOCTYPE html>
-<html>
-<head>
-<script type="text/javascript" src="script.js"></script>
-</head>
-<body>
-    <h1>Rock, Paper, Scissors</h1>
-    <button onClick='choose("rock")'>Rock</button>
-    <button onClick='choose("paper")'>Paper</button>
-    <button onClick='choose("scissors")'>Scissors</button><br>
-    <button onClick='compare(user, computerChoice)'>Go!</button>
-    <p id="result"></p>
-</body>
-</html>
+<HTML>
+<HEAD><TITLE></TITLE>
+<META http-equiv=Content-Type content="text/html; charset=UTF-8">
+<STYLE type=text/CSS>
+.s{font-size:60px}
+.b{font-size:75px;background-color:##FF4000;height:85px}
+</STYLE>
+<SCRIPT type="text/javascript">
+var p=['Rock','Scissors','Paper',['win','&#10004;'],['lose','&#9760;']]
+
+function g(n){ document.getElementById('g').innerHTML=p[n]; var cp=[0,1,2]
+    cp.sort(function(a,b){return Math.random()-0.5});
+    r=Math.floor(3*(Math.random()));
+    document.getElementById('i').innerHTML=p[cp[r]];r=cp[r];
+    if(r===n){w(1); return}
+    else if((r===0 && n===1) || (r===1 && n==2) || (r==2 && n===0)){w(2)}
+    else{w(0)}
+
+}
+function w(w){
+pf=document.getElementById('gam'); pftr=pf.getElementsByTagName('tr');pftd=pf.getElementsByTagName('td');
+    for(b=0;b<3;b++){pftd[b].innerHTML='&nbsp;'} w===1?pftd[w].innerHTML='tie':pftd[w].innerHTML='win'
+}
+</SCRIPT>
+<META content="MSHTML 6.00.2900.2963" name=GENERATOR></HEAD>
+<BODY scroll="auto">
+<OBJECT ID="VoiceObj" CLASSID="clsid:96749377-3391-11D2-9EE3-00C04F797396" ></OBJECT>
+<TABLE BORDER=0 style="height:200px;width:500px;text-align:center;font-size:50px" id="gam">
+ <TR>
+  <TD width="33%">  </TD><TD rowspan=2 id="ww">  </TD><TD width="33%" >  </TD>
+ </TR>
+ <TR>
+  <TD id="g">  </TD><TD id="i">  </TD>
+ </TR>
+</TABLE>
+<TABLE BORDER=1 style="border-collapse:collapse" cellpadding=0 >
+<TR>
+
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Player
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp;&nbsp;&nbsp;&nbsp;Computer
+
+
+    </TR>
+ <TR>
+ </Table>
+<hr style="margin:30px">
+<TABLE BORDER=1 style="border-collapse:collapse" cellpadding=0 >
+
+   <TD><input type="button" class="b" value="Paper" onclick="g(2)"></TD>
+  <TD><input type="button" class="b" value="Rock" onclick="g(0)"></TD>
+  <TD><input type="button" class="b" value="Scissors" onclick="g(1)"></TD>
+
+ </TR>
+</TABLE>
+
+
+
+</BODY></HTML>
