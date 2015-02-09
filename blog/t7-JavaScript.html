@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../Stylesheets/default.css">
+<link rel="stylesheet" type="text/css" href="../Stylesheets/blog-stylesheet.css"/>
+  <title>Durkheim</title>
+  <meta charset="UTF-8">
+</head>
+<img src="../BringCats.jpg" alt="imagelogo" width="500" height="300">
+<h1 id="blog-title">Durkheim's Blog</h1>
+<ul>
+   <li><a href="http://durkheim.github.io/blog.html">Home</a></li>
+   <li> | </li>
+  <li><a href="#">About Me</a></li>
+  <li> | </li>
+  <li><a href="blog-archive.html">Archive</a></li>
+  <li> | </li>
+  <li><a href="http://durkheim.github.io/">Website</a></li>
+  <li> | </li>
+  <li><a href="https://twitter.com/SuboptimalDelta">Twitter</a></li>
+</ul>
+<div class="align">
+<main>
+
+  <h1>DBC Phase 0, Week 7</h1>
+  <h2>Looping: Ruby Hashes vs. JavaScript Objects </h2>
+  <h4>February 8, 2015</h4>
+
+  <section>
+
+   <p>
+    After spending the last few weeks learning the fundamentals of Ruby, we started learning some basics of JavaScript. Having a background in Ruby definitely made the transition easier for me. I was able to clearly recognize objects in Javascript and how they were being manipulated. With that said, JavaScript features some pretty distinct aspects from Ruby. In this blog, I'll explore how object data is stored in JavaScript vs. Ruby.
+   </p>
+
+  <p>
+    If we refer back to some of my older posts on classes, we know that objects are initialized under a specific class with instance variables that define states of the object. While it's possible to access these states through attr_readers, accessing the data in larger stacks of code can sometimes be tricky. In JavaScript, the states of objects are refered to as properties and much easier to access than in Ruby. Let's look at an example of object and property syntax in Javascript:
+  </p>
+
+  <p>
+  <code>var person = {
+  name: bill,
+  age: 28,
+  eyeColor: blue,
+};</code>
+  </p>
+
+  <p>
+    In the above example, we have an object 'person', with the properties name, age, and eyeColor. If we want to access the values of these properties, we simply write:
+  </p>
+
+  <code>
+    person.name;
+    person.age;
+    person.eyeColor;
+  </code>
+
+  <p>
+   In Ruby, these properties would not be readily accessible. As mentioned above, we would have to set them to attr_readers to return a value. In JavaScript, it's also relatively easy to write new values to a property that already exists. Example:
+ </p>
+
+   <code>
+   person.eyeColor = green;
+   </code>
+
+   <p>
+   To do this in Ruby, we'd have to set the properties (instance variables/states) to attr_writers or attr_accessors.
+ </p>
+
+ <p>
+  So far, we've mainly focused on how it's easier to access property values of objects in Javascript than in Ruby. It's worth mentioning, however, that the data structure of an object in Javascript is very similar to a specific kind of object in Ruby—a hash. In Ruby, a hash has key-value pairs, with syntax that closely mirrors JavaScript:
+ </p>
+
+ <p>
+  <code>
+    person = {name: "bill", age: 28, eyeColor: "blue"}
+  </code>
+
+  <p>
+    In the above example, person is a Ruby hash, while name:, age:, and eyeColor: are the keys, with corresponding values of "bill", 28, and "blue", respectively. It's relatively easy to access the value in a hash based on its key:
+  </p>
+
+  <code>
+    person[:name] => "bill"
+  </code>
+
+   <p>
+    The syntax for accessing the value is different than JavaScript, but the pairing is relatively similar.
+  </p>
+
+  </section>
+</main>
+</div>
+</html>
