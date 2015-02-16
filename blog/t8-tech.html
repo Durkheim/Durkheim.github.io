@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../Stylesheets/default.css">
+<link rel="stylesheet" type="text/css" href="../Stylesheets/blog-stylesheet.css"/>
+  <title>Durkheim</title>
+  <meta charset="UTF-8">
+</head>
+<img src="../BringCats.jpg" alt="imagelogo" width="500" height="300">
+<h1 id="blog-title">Durkheim's Blog</h1>
+<ul>
+   <li><a href="http://durkheim.github.io/blog.html">Home</a></li>
+   <li> | </li>
+  <li><a href="#">About Me</a></li>
+  <li> | </li>
+  <li><a href="blog-archive.html">Archive</a></li>
+  <li> | </li>
+  <li><a href="http://durkheim.github.io/">Website</a></li>
+  <li> | </li>
+  <li><a href="https://twitter.com/SuboptimalDelta">Twitter</a></li>
+</ul>
+<div class="align">
+<main>
+
+  <h1>DBC Phase 0, Week 8</h1>
+  <h2>Recursion</h2>
+  <h4>February 15, 2015</h4>
+
+  <section>
+
+   <p>
+    As part of our experience at DBC (and our future experience as developers), we'll often be asked to research and learn new concepts or even languages. Previously, we were instructed not to use recursion to solve any of our challenges, but now we've been given an opportunity to research new concepts, and I thought this would be a good opportunity to cover recursion.
+   </p>
+
+   <p>
+    In Ruby, recursion is the act of calling a method within a method. As an example:
+  </p>
+
+  <code>
+  def countdown(integer)<br>
+     return if integer.zero?<br>
+     puts integer<br>
+     countdown(integer-1)<br>
+  end<br><br>
+
+  countdown(5)<br>
+  5<br>
+  4<br>
+  3<br>
+  2<br>
+  1<br>
+</code>
+
+<p>
+  In the above code, we set a base case of if integer.zero?. We then puts the integer use the countdown method within itself to puts integers down to 1.
+</p>
+
+  </section>
+</main>
+</div>
+</html>
