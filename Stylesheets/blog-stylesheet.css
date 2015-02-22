@@ -1,9 +1,10 @@
 img {
   margin: 0 auto;
   position: relative;
-  left: 25%;
-  height: 300px;
-  width: 500px;
+}
+
+h1 {
+  margion: 0 auto;
 }
 
 #blog-title {
