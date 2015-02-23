@@ -63,15 +63,16 @@ li {
   border-color: #336699;
   border-width: 1px;
   position: relative;
+  overflow: hidden;
   }
 
 .sectiontwo {
   font-size: 15px;
   background-color: white;
   position: relative;
-  overflow: hidden;
+  overflow: scroll;
   padding: 15px;
-  height: 100%;
+  height: 50%;
   width: 25%;
   margin-top: -580px;
   margin-left: 0px;
@@ -80,15 +81,16 @@ li {
   border-color: #336699;
   border-width: 1px;
   position: relative;
+  overflow: hidden;
   }
 
-  .postnav {
+.postnav {
     position: relative;
     margin-top: 175px;
     margin-left: 570px;
   }
 
-  section {
+section {
     padding: 1px 1px 1px 1px;
   }
 
