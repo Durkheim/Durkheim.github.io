@@ -54,7 +54,7 @@ li {
 .sectionone {
   background-color: white;
   padding: 15px;
-  height: 10%;
+  height: 30%;
   width: 43%;
   margin-top: 60px;
   margin-left: 350px;
@@ -62,7 +62,9 @@ li {
   border-style: solid;
   border-color: #336699;
   border-width: 1px;
-  position: absolute;
+  position: relative;
+  overflow: hidden;
+
   }
 
 .sectiontwo {
@@ -71,7 +73,7 @@ li {
   position: relative;
   overflow: scroll;
   padding: 15px;
-  height: 50%;
+  height: 30%;
   width: 25%;
   margin-top: -580px;
   margin-left: 0px;
@@ -80,6 +82,7 @@ li {
   border-color: #336699;
   border-width: 1px;
   position: relative;
+  overflow: hidden;
   }
 
 .postnav {
