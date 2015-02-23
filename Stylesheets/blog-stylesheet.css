@@ -1,53 +1,110 @@
-img {
+body {
+  font-family: Helvetica;
+  background-color: #a3c9f0;
   margin: 0 auto;
-  position: relative;
 }
 
-h1 {
-  margin: 0 auto;
-  position: relative;
+.header {
+  height: 400px;
+  width: 100%;
+  background-color: white;
+  margin-top: 0px;
+  border-bottom: 1px solid #336699;
+}
+
+#imageheader {
+  height: 300px;
+  border-radius: 100px;
 }
 
 #blog-title {
-  margin: 0 auto;
-  position: relative;
-  left: 32%;
+  margin-top: 0px;
+  text-align: center;
   font-size: 50px;
-  padding-left: 1px;
-  padding-right: 1px;
+  color: white;
+  text-shadow: 2px 2px black;
+  background: linear-gradient(#336699, #003366);
+  width: 100%;
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
 
-ul {
-  display: inline-block;
-  position: relative;
-  bottom: 50px;
-  margin-top: 80px;
-  margin-right: 200px;
-  margin-left: 350px;
-
+.navigation {
+  height: 20px;
+  margin-top: -51px;
+  width: 100%px;
+  background: linear-gradient(#E6E6E6,white);
+  padding-top: 11px;
 }
 
-ul li {
-  list-style: none;
+
+#navbar {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 1px;
 }
 
 li {
-  border: none;
-  height: 55px;
-  width: 155px;
-  font-size: 25px;
+    display: inline;
+    text-align: center;
+    font-size: 18px;
 }
 
-.align {
-  display: inline-block;
+
+.sectionone {
+  background-color: white;
+  padding: 15px;
+  height: 50%;
+  width: 43%;
+  margin-top: 60px;
+  margin-left: 350px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #336699;
+  border-width: 1px;
+  position: relative;
+  }
+
+.sectiontwo {
+  font-size: 15px;
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+  padding: 15px;
+  height: 100%;
+  width: 25%;
+  margin-top: -580px;
+  margin-left: 0px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #336699;
+  border-width: 1px;
+  position: relative;
+  }
+
+  .postnav {
+    position: relative;
+    margin-top: 175px;
+    margin-left: 570px;
+  }
+
+  section {
+    padding: 1px 1px 1px 1px;
+  }
+
+.navlink:link {
+    color: black;
+    text-decoration: none;
 }
 
-main {
-  margin-left: 325px;
+.navlink:visited {
+    color: #660033;
 }
 
-section {
-  width: 500px;
-  padding-left: 1px;
-  padding-right: 1px;
+.navlink:hover {
+    color: #660033;
+}
+
+a:link{
+  color: black;
 }
