@@ -54,8 +54,8 @@ li {
 .sectionone {
   background-color: white;
   padding: 15px;
-  height: 750px;
-  width: 500px;
+  height: 500px;
+  width: 350px;
   margin-top: 60px;
   margin-left: 350px;
   border-radius: 10px;
@@ -63,7 +63,7 @@ li {
   border-color: #336699;
   border-width: 1px;
   position: relative;
-  overflow: hidden;
+  overflow: scroll;
 
   }
 
@@ -73,8 +73,8 @@ li {
   position: relative;
   overflow: scroll;
   padding: 15px;
-  height: 500px;
-  width: 250px;
+  height: 400px;
+  width: 300px;
   margin-top: -580px;
   margin-left: 0px;
   border-radius: 10px;
@@ -82,7 +82,7 @@ li {
   border-color: #336699;
   border-width: 1px;
   position: relative;
-  overflow: hidden;
+  overflow: scroll;
   }
 
 .postnav {
