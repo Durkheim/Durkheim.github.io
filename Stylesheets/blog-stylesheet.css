@@ -67,23 +67,6 @@ li {
 
   }
 
-.sectiontwo {
-  font-size: 15px;
-  background-color: white;
-  position: relative;
-  overflow: scroll;
-  padding: 15px;
-  height: 400px;
-  width: 300px;
-  margin-top: -580px;
-  margin-left: 0px;
-  border-radius: 10px;
-  border-style: solid;
-  border-color: #336699;
-  border-width: 1px;
-  position: relative;
-  overflow: scroll;
-  }
 
 .postnav {
     position: relative;
